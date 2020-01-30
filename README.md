@@ -27,3 +27,4 @@ This example follows the following basic conventions:
 | **executes in Maven phase:** | test | verify |
 | **handled by Maven plugin:** | [surefire](http://maven.apache.org/surefire/maven-surefire-plugin/) | [failsafe](http://maven.apache.org/surefire/maven-failsafe-plugin/) |
 Test 123
+Test 123
