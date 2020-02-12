@@ -17,5 +17,12 @@ node {
    stage('Results') {
        archiveArtifacts 'target/*.jar'
        junit 'target/surefire-reports/*.xml'
+       step([$class: 'ElectricFlowPipelinePublisher', 
+           configuration: 'local',
+           projectName  : 'CloudBees',
+           pipelineName : 'TestPipeline',
+           addParam     : ''
+       ])
+        
    }
 }
